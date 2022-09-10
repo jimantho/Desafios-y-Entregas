@@ -45,7 +45,7 @@ class Participante {
     this.sexo = sexo;
   };
   cambiarNombre(){
-    return this.nombre +" Nombre"
+    return "hola";
   }
 
 };
@@ -66,10 +66,26 @@ function Registrarse(){
 
 function verRegistro(){
   document.write("hola");
-  for(  let j =0;j < arrayParticipante.length; j++){
-    document.write("hola2");
-    document.write("hola" + arrayParticipante[j]);
-    // document.write(participante.contraseña);
+
+  for(var participante of arrayParticipante){
+    document.write("hola" + participante.usuario);
   }
 
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
