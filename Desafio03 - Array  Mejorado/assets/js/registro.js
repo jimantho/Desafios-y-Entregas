@@ -1,3 +1,4 @@
+/* Incorporando Array Objetos*/
 class Participante {
     constructor(usuario, contrasena, dni, nombre, edad, sexo){
     this.usuario = usuario;
