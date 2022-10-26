@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.publicacion{
+    height: 350px;
+    width: 250px;
+    border: 5px;
+    border-style: solid;
+    border-radius: 7px;
+    border-color:rgb(104, 172, 235);
+    padding: 20px;
+}
+
+.img {
+    height: 290px;
+    width: 240px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("/assets/images/fabula1.webp")
+}
+.btnVer {
+    height: 20px;
+    border-style: solid;
+    border-radius: 7px;
+    border-color:rgb(104, 172, 235);
+    padding: 5px;
+    margin: 5px;
+}
+
+.ultPublicaciones{
+    display: flex;
+    flex-direction: row;
+}
+
+.publicacion{
+    margin: 5px;
+}

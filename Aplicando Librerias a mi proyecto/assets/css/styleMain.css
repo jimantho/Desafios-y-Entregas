@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Poppins:wght@300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  height: 135px;
+  width: 100%;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(227, 213, 86);
+}
+
+nav {
+  height: 135px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 153, 11);
+  position: fixed;
+}
+
+ul {
+  display: flex;
+}
+
+.menu__item,
+.iconsUser {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.fa-user {
+  color: rgba(23, 44, 58, 0.988);
+  height: 30px;
+  width: 30px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: blanchedalmond;
+  color: rgb(255, 115, 0);
+}
+
+.icons {
+  display: flex;
+}
+
+li {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.icons__user {
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.btnUsario {
+  color: rgb(254, 254, 254);
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu__item__a {
+  color: rgba(85, 81, 81, 0.781);
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btnUsario {
+  background-color: transparent;
+  border: none;
+}
+
+h1,
+p {
+  background-color: rgb(52, 133, 119);
+  padding: 15px;
+  color: white;
+  font-size: 20PX;
+  font-family: 'Mukta', sans-serif;
+  text-align: center;
+}
+
+.fondo {
+  background-image: url("/assets/images/fondo2.jfif");
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.botonUnete {
+  background-color: rgba(0, 0, 0, 0.267);
+  border-radius: 8px;
+  padding: 10px 50px 10px 50px;
+  margin: 0 auto;
+  position: absolute;
+  top: 25%;
+
+}
+
+.textoUnete {
+  color: rgb(255, 117, 11);
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+
+/* Inicio de sesión */
+.loginFrame {
+  border: 1px;
+  border-color: burlywood;
+  border-radius: 8px;
+  border-style: solid;
+  padding: 10px;
+  background-color: rgba(7, 19, 7, 0.39);
+
+}
+
+.datos {
+  border: 1px;
+  border-color: burlywood;
+  border-radius: 8px;
+  border-style: solid;
+  padding: 10px;
+  background-color: rgba(7, 19, 7, 0.39);
+  width: 300px;
+}
+
+/* POP UP*/
+.overlay {
+  background: rgba(121, 112, 112, 0.267);
+  height: 250px;
+  width: 100% 100%;
+  border-radius: 8px;
+  position: fixed;
+  top: 350px;
+  bottom: 0;
+  left: 650px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+}
+
+form {
+  width: 350px;
+  padding: 10px;
+
+}
+
+.overlay.active {
+  visibility: visible;
+}
+
+.loginFrame {
+  /* background-color: aquamarine; */
+  display: flex;
+
+}
+
+.formCajas {
+  /* background-color: aqua; */
+  margin-top: 10px;
+  display: block;
+  
+
+}
+
+.formCajas label {
+  color: rgb(255, 247, 0);
+  align-items:  center;
+}
+
+.loginFrame .cerrarPopUp {
+  font-size: 16px;
+  line-height: 16px;
+  display: block;
+  text-align: right;
+  color: #fff;
+  transition: .3s ease all;
+
+}
+
+.loginFrame .cerrarPopUp:hover {
+  color: black;
+}
+
+.btnLogin {
+  cursor: pointer;
+  transition: .3s ease alL;
+  background: rgb(248, 233, 22);
+  border-radius: 3px;
+  border-style: none;
+  padding: 5px 8px;
+
+}
+
+.btnLogin:hover {
+  background: rgb(245, 238, 143);
+}

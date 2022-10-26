@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/styleMain.css" />
+  <script src="https://kit.fontawesome.com/622f769169.js" crossorigin="anonymous"></script>
+  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- navbar -->
+      <!-- logo -->
+      <h1>DiverNiños</h1>
+      <!-- menu -->
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="/index.html" class="menu__item__a">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__item__a">Nosotros</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item__a" href="#">Nuestros Niños</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item__a" href="#">Fábulas</a>
+        </li>
+        <li>
+          <!-- iniciar sesion -->
+          <div class="icons">
+            <div class="iconsUser">
+              <a href="" class="icons__user"><i class="fa-solid fa-user fa-2x"></i></a>
+              <button class="btnUsario" id="cuentaUsuario"> Mi Cuenta</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- backup -->
+        <!-- <li>
+           iniciar sesion 
+          <div class="icons">
+            <div>
+              <a href="" class="icons__user"><i class="fa-solid fa-user"></i></a>
+              <div><a href="" id="cuentaUsuario">Mi Cuenta</a></div>
+              <button class="menu__item__a" href="" id="ingresar"> Ingresar</button>
+            </div>
+          </div>
+        </li>   -->
+
+      </ul>
+
+
+    </nav>
+  </header>
+  <!-- main -->
+  <main>
+    <p>Somos una comunidad donde compartimos cuentos y fábulas para niños</p>
+    <div class="fondo">
+      <div class="botonUnete">
+        <a class="textoUnete" href="/assets/pages/registro.html">Únete a Nosotros </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- poopUp para iniciar sesion -->
+  <div class="overlay" id="overlay">
+    <div id="loginFrame">
+      <a href="" id="cerrarPopUp"><i class="fa-solid fa-xmark"></i></a>
+      <form action="">
+        <div class=" formCajas user">
+          <label for="">Email o Usuario </label>
+          <div>
+            <input type="email" name="" id="user" required class="datos" />
+          </div>
+        </div>
+        <div class="formCajas password">
+          <label for="">Contraseña </label>
+          <div>
+            <input type="password" name="" id="pwd" required class="datos" />
+          </div>
+        </div>
+        <div class="formCajas">
+          <input value="Ingresar" class="btnLogin" type="button" id="login">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer></footer>
+  <!-- enlace a script librerias -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- enlace a script -->
+  <script src="/assets/js/index.js"></script>
+  <script src="/assets/js/home.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

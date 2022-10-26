@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+
+}
+.formRegistro{
+    background-color:rgb(68, 127, 121) ;
+    border-left: 20px;
+
+}
+
+.campoRegistro{
+    padding-top: 5px;
+    border-radius: 4px;
+}
+.campoInputRegistro{
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+}
+.btnRegistrar{
+    
+    background-color: rgb(245, 149, 231);
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.mensaje{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.btnVerRegistro{
+    background-color: rgb(26, 189, 143);
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.filaDescripcion, .filaDatos{
+    display: flex;
+}
+.columna{
+    margin: 4px;
+    margin-right: 50px;
+}
