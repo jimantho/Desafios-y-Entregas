@@ -39,8 +39,8 @@ ul {
   align-items: center;
 }
 
-.fa-user {
-  color: rgba(23, 44, 58, 0.988);
+.fa-user, .fa-arrow-right-to-bracket {
+  color: rgba(75, 76, 49, 0.988);
   height: 30px;
   width: 30px;
 
@@ -69,12 +69,16 @@ li {
   width: 40px;
   text-decoration: none;
   display: flex;
+  justify-content: center;
   align-items: center;
+
 }
 
 .btnUsario {
   color: rgb(254, 254, 254);
   font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  
 }
 
 .menu__item__a {

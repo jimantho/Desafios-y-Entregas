@@ -1,6 +1,3 @@
-
-alert("estamos en la pagina 2");
-
 /* Mostrado Nombre Perfil */
 var login = document.getElementById("cuentaUsuario");
 nombreUsuario = document.getElementById("cuentaUsuario");
@@ -14,7 +11,6 @@ arrayUuarios.forEach(usuario => {
     nombreUsuario.textContent = usuario.nombre;
   }
 });
-
 
 nombreUsuario = document.getElementById("cuentaActual");
 
