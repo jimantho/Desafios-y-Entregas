@@ -1,8 +1,9 @@
 // /* variables
 const footer = document.querySelector("footer");
 const header = document.querySelector("header");
-let piePagi, encabezado, popUp;
+const htmlPopUp = document.getElementById("cajitaPopUp");
 
+let piePagi, encabezado, popUp;
 
 function piePag() {
   piePagi = `
@@ -162,7 +163,35 @@ function mostrarHeader() {
 `;
   header.innerHTML = encabezado;
 };
+function mostrarHtmlPopUp(){
+  popUp = `
+  <div class="overlay" id="overlay">
+    <div id="loginFrame">
+      <a href="" id="cerrarPopUp"><i class="fa-solid fa-xmark"></i></a>
+      <form action="">
+        <div class=" formCajas user">
+          <label for="">Email o Usuario </label>
+          <div>
+            <input type="email" name="" id="user" required class="datos" />
+          </div>
+        </div>
+        <div class="formCajas password">
+          <label for="">Contraseña </label>
+          <div>
+            <input type="password" name="" id="pwd" required class="datos" />
+          </div>
+        </div>
+        <div class="formCajas">
+          <input value="Ingresar" class="btnLogin" type="button" id="login">
+        </div>
+      </form>
+    </div>
+  </div>
+  `;
+  htmlPopUp.innerHTML = popUp
+};
 
 piePag();
 mostrarHeader();
+mostrarHtmlPopUp();
 
