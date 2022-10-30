@@ -1,8 +1,11 @@
 // /* variables
+const footer = document.querySelector("footer");
+const header = document.querySelector("header");
 let piePagi;
+let encabezado;
 function piePag() {
-  const footer = document.querySelector("footer");
-  piePagi = `
+
+    piePagi = `
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left -->
@@ -121,7 +124,44 @@ function piePag() {
   </div>
   <!-- Copyright -->
   `;
-  footer.innerHTML = piePagi;
+    footer.innerHTML = piePagi;
+};
+function mostrarHeader() {
+encabezado = `
+<nav>
+      <!-- navbar -->
+      <!-- logo -->
+      <h1>DiverNiños</h1>
+      <!-- menu -->
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="/index.html" class="menu__item__a">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__item__a">Nosotros</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item__a" href="#">Nuestros Niños</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item__a" href="/assets/pages/fabulasVideo.html">Fábulas</a>
+        </li>
+        <li>
+          <!-- iniciar sesion -->
+          <div class="icons">
+            <div class="iconsUser">
+              <a href="" class="icons__user"><i class="fa-solid fa-user fa-2x"></i></a>
+              <button class="btnUsario" id="cuentaUsuario"> Mi Cuenta</button>
+              <a href="" class="icons__user" id="cerrarSesion"><i
+                  class="fa-solid fa-arrow-right-to-bracket fa-2x"></i></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+</nav>
+`;
+header.innerHTML = encabezado;
 };
 
 piePag();
+mostrarHeader();
