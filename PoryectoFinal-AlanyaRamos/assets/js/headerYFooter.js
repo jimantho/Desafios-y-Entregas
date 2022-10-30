@@ -1,11 +1,11 @@
 // /* variables
 const footer = document.querySelector("footer");
 const header = document.querySelector("header");
-let piePagi;
-let encabezado;
-function piePag() {
+let piePagi, encabezado, popUp;
 
-    piePagi = `
+
+function piePag() {
+  piePagi = `
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left -->
@@ -124,10 +124,10 @@ function piePag() {
   </div>
   <!-- Copyright -->
   `;
-    footer.innerHTML = piePagi;
+  footer.innerHTML = piePagi;
 };
 function mostrarHeader() {
-encabezado = `
+  encabezado = `
 <nav>
       <!-- navbar -->
       <!-- logo -->
@@ -160,8 +160,9 @@ encabezado = `
       </ul>
 </nav>
 `;
-header.innerHTML = encabezado;
+  header.innerHTML = encabezado;
 };
 
 piePag();
 mostrarHeader();
+

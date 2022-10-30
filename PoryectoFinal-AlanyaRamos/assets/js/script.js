@@ -13,7 +13,6 @@ var login = document.getElementById("cuentaUsuario"),
 
 /* leyendo datos */
 usuarios = JSON.parse(localStorage.getItem("registroUsuarios"));
-console.log(usuarios);
 
 /* funciones */
 function mostrarPopUp() {
