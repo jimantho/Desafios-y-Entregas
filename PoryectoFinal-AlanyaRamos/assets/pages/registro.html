@@ -33,18 +33,23 @@
   <header>
   </header>
   <h1>Ingresa tu datos para registrarte y unirte a la comunidad</h1>
-  <form action="">
-    <div class="formRegistro">
-      <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="usuario" placeholder="usuario"></div>
-      <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="contrasena" placeholder="contraseña">
+  <div class="contFormulario">
+    <form class="formulario" action="">
+      <div class="formRegistro">
+        <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="usuario" placeholder=" Usuario">
+        </div>
+        <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="contrasena"
+            placeholder=" Contraseña">
+        </div>
+        <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="dni" placeholder=" DNI"></div>
+        <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="nombre" placeholder=" Nombre"></div>
+        <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="edad" placeholder=" Edad"></div>
+        <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="sexo" placeholder=" F\M"></div>
+        <div class="campoRegistro"><input type="button" class="btnRegistrar" id="registrar" value=" Registrar"></div>
       </div>
-      <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="dni" placeholder="dni"></div>
-      <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="nombre" placeholder="nombre"></div>
-      <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="edad" placeholder="edad"></div>
-      <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="sexo" placeholder="F\M"></div>
-      <div><input type="button" class="btnRegistrar" id="registrar" value="Registrar"></div>
-    </div>
-  </form>
+    </form>
+  </div>
+
   <div><label for="" class="mensaje" id="mensaje"></label></div>
   <div><input type="button" class="btnVerRegistro" value="Ver perfil" id="verRegistro"></div>
   <div class="tituloRegistro">Mi perfil</div>
@@ -67,29 +72,6 @@
       <div class="columna" id="nuevoSexo"></div>
     </div>
   </div>
-  <!-- poopUp para iniciar sesion -->
-  <div class="overlay" id="overlay">
-    <div id="loginFrame">
-      <a href="" id="cerrarPopUp"><i class="fa-solid fa-xmark"></i></a>
-      <form action="">
-        <div class=" formCajas user">
-          <label for="">Email o Usuario </label>
-          <div>
-            <input type="email" name="" id="user" required class="datos" />
-          </div>
-        </div>
-        <div class="formCajas password">
-          <label for="">Contraseña </label>
-          <div>
-            <input type="password" name="" id="pwd" required class="datos" />
-          </div>
-        </div>
-        <div class="formCajas">
-          <input value="Ingresar" class="btnLogin" type="button" id="login">
-        </div>
-      </form>
-    </div>
-  </div>
 
   <!-- poopUp para iniciar sesion -->
   <div id="cajitaPopUp">
@@ -100,7 +82,7 @@
   </footer>
   <!-- script para librerias -->
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  
+
   <script src="/assets/js/registro.js"></script>
   <script src="/assets/js/headerYFooter.js"></script>
   <script src="/assets/js/script.js"></script>
