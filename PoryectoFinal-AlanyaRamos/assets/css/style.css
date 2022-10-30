@@ -93,7 +93,7 @@ li {
 }
 
 h1,
-p {
+.parrafo {
   background-color: rgb(52, 133, 119);
   padding: 15px;
   color: white;

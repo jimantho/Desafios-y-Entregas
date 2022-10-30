@@ -1,90 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registro</title>
-        <link rel="stylesheet" href="/assets/css/registro.css">
-        <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/css/style.css" />
-    </head>
-    <body>
-        <header>
-            <nav>
-              <!-- navbar -->
-              <!-- logo -->
-              <h1>DiverNiños</h1>
-              <!-- menu -->
-              <ul class="menu">
-                <li class="menu__item">
-                  <a href="/index.html" class="menu__item__a">Home</a>
-                </li>
-                <li class="menu__item">
-                  <a href="" class="menu__item__a">Nosotros</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__item__a" href="#">Nuestros Niños</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__item__a" href="/assets/pages/fabulasVideo.html">Fábulas</a>
-                </li>
-                <li>
-                  <!-- iniciar sesion -->
-                  <div class="icons">
-                    <div class="iconsUser">
-                      <a href="" class="icons__user"><i class="fa-solid fa-user fa-2x"></i></a>
-                      <button class="btnUsario" id="cuentaUsuario"> Mi Cuenta</button>
-                    </div>
-                  </div>
-                </li>        
-              </ul>
-        
-        
-            </nav>
-          </header>
-        <h1>Ingresa tu datos para registrarte y unirte a la comunidad</h1>
-        <form action="">
-            <div class="formRegistro">
-                <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="usuario" placeholder="usuario"></div>
-                <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="contrasena" placeholder="contraseña"></div>
-                <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="dni" placeholder="dni"></div>
-                <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="nombre" placeholder="nombre"></div>
-                <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="edad" placeholder="edad"></div>
-                <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="sexo" placeholder="F\M"></div>
-                <div><input type="button" class="btnRegistrar" id="registrar" value="Registrar"></div>
-            </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="/assets/css/registro.css">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/622f769169.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- navbar -->
+      <!-- logo -->
+      <h1>DiverNiños</h1>
+      <!-- menu -->
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="/index.html" class="menu__item__a">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__item__a">Nosotros</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item__a" href="#">Nuestros Niños</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item__a" href="/assets/pages/fabulasVideo.html">Fábulas</a>
+        </li>
+        <li>
+          <!-- iniciar sesion -->
+          <div class="iconsUser">
+            <a href="" class="icons__user"><i class="fa-solid fa-user fa-2x"></i></a>
+            <button class="btnUsario" id="cuentaUsuario"> Mi Cuenta</button>
+            <a href="" class="icons__user" id="cerrarSesion"><i
+                class="fa-solid fa-arrow-right-to-bracket fa-2x"></i></a>
+          </div>
+        </li>
+      </ul>
 
 
-        </form>
-        <div><label for="" class="mensaje" id="mensaje" ></label></div>
-        <div><input type="button" class="btnVerRegistro" value="Ver perfil" id="verRegistro"></div>
-        
+    </nav>
+  </header>
+  <h1>Ingresa tu datos para registrarte y unirte a la comunidad</h1>
+  <form action="">
+    <div class="formRegistro">
+      <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="usuario" placeholder="usuario"></div>
+      <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="contrasena" placeholder="contraseña">
+      </div>
+      <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="dni" placeholder="dni"></div>
+      <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="nombre" placeholder="nombre"></div>
+      <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="edad" placeholder="edad"></div>
+      <div class="campoRegistro"><input type="text" class="campoInputRegistro" id="sexo" placeholder="F\M"></div>
+      <div><input type="button" class="btnRegistrar" id="registrar" value="Registrar"></div>
+    </div>
 
-        <div class="tituloRegistro">Mi perfil</div>
-        <div class="contenedorRegistro">
-            <div><img src="/assets/images/iconUser.png" alt=""></div>
-            <div class="filaDescripcion">
-                <div class="columna" id="">Usuario</div>
-                <div class="columna">Contrasena</div>
-                <div class="columna">Nombre</div>
-                <div class="columna">Dni</div>
-                <div class="columna">Edad</div>
-                <div class="columna">Sexo</div> 
-            </div>
-            
-            <div class="filaDatos">
-                <div class="columna" id="nuevoUsuario"></div>
-                <div class="columna" id="nuevoContrasena"></div>
-                <div class="columna" id="nuevoNombre"></div>
-                <div class="columna" id="nuevoDni"></div>
-                <div class="columna" id="nuevoEdad"></div>
-                <div class="columna" id="nuevoSexo"></div>
-            </div>
-        </div>
-        <!-- script para librerias -->
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="/assets/js/registro.js"></script>
-        
-    </body>
+
+  </form>
+  <div><label for="" class="mensaje" id="mensaje"></label></div>
+  <div><input type="button" class="btnVerRegistro" value="Ver perfil" id="verRegistro"></div>
+
+
+  <div class="tituloRegistro">Mi perfil</div>
+  <div class="contenedorRegistro">
+    <div><img src="/assets/images/iconUser.png" alt=""></div>
+    <div class="filaDescripcion">
+      <div class="columna" id="">Usuario</div>
+      <div class="columna">Contrasena</div>
+      <div class="columna">Nombre</div>
+      <div class="columna">Dni</div>
+      <div class="columna">Edad</div>
+      <div class="columna">Sexo</div>
+    </div>
+
+    <div class="filaDatos">
+      <div class="columna" id="nuevoUsuario"></div>
+      <div class="columna" id="nuevoContrasena"></div>
+      <div class="columna" id="nuevoNombre"></div>
+      <div class="columna" id="nuevoDni"></div>
+      <div class="columna" id="nuevoEdad"></div>
+      <div class="columna" id="nuevoSexo"></div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer></footer>
+  <!-- script para librerias -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/assets/js/registro.js"></script>
+  <script src="/assets/js/footer.js"></script>
+
+
+</body>
+
 </html>

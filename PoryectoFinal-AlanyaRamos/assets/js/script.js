@@ -29,10 +29,10 @@ function buscarUsuario() {
 };
 function usuarioExis() {
   const usuarioExiste = usuarios.find(usuario => usuario.estadoSesion === "1");
-  usuarioExiste?mostrarPagina():mostrarPopUp();
+  usuarioExiste ? mostrarPagina() : mostrarPopUp();
 };
 function mostrarEspacio() {
-  usuarios.length < 0?mostrarPopUp():usuarioExis();
+  usuarios.length < 0 ? mostrarPopUp() : usuarioExis();
 };
 
 /* ejecutando eventos */
