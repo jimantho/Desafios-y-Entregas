@@ -120,7 +120,7 @@ function piePag() {
 
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-    © 2021 Copyright:
+    © 2022 Copyright:
     <a class="text-reset fw-bold" href="https://mdbootstrap.com/">diverninos.com</a>
   </div>
   <!-- Copyright -->
@@ -165,6 +165,7 @@ function mostrarHeader() {
 };
 function mostrarHtmlPopUp(){
   popUp = `
+
   <div class="overlay" id="overlay">
     <div id="loginFrame">
       <a href="" id="cerrarPopUp"><i class="fa-solid fa-xmark"></i></a>
@@ -181,12 +182,13 @@ function mostrarHtmlPopUp(){
             <input type="password" name="" id="pwd" required class="datos" />
           </div>
         </div>
-        <div class="formCajas">
+        <div class="formCajas btn">
           <input value="Ingresar" class="btnLogin" type="button" id="login">
         </div>
       </form>
     </div>
   </div>
+  
   `;
   htmlPopUp.innerHTML = popUp
 };

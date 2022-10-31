@@ -120,10 +120,8 @@ h1,
   padding: 10px 50px 10px 50px;
   margin: 0 auto;
   position: absolute;
-  top: 25%;
-
+  top: 30%;
 }
-
 .textoUnete {
   color: rgb(255, 117, 11);
   font-size: 15px;
@@ -131,73 +129,36 @@ h1,
   text-align: center;
 }
 
-
-/* Inicio de sesión */
-.loginFrame {
-  border: 1px;
-  border-color: burlywood;
-  border-radius: 8px;
-  border-style: solid;
-  padding: 10px;
-  background-color: rgba(7, 19, 7, 0.39);
-
-}
-
-.datos {
-  border: 1px;
-  border-color: burlywood;
-  border-radius: 8px;
-  border-style: solid;
-  padding: 10px;
-  background-color: rgba(7, 19, 7, 0.39);
-  width: 300px;
-}
-
 /* POP UP*/
-.overlay {
-  background: rgba(121, 112, 112, 0.267);
-  height: 250px;
-  width: 100% 100%;
-  border-radius: 8px;
-  position: fixed;
-  top: 350px;
-  bottom: 0;
-  left: 650px;
-  align-items: center;
+
+.cajitaPopUp{
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 400px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+
+
+}
+.overlay {
+  background: rgba(233, 97, 43, 0.574);
+  height: 250px;
+  width: 20%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
   visibility: hidden;
 }
-
-form {
-  width: 350px;
-  padding: 10px;
-
-}
-
 .overlay.active {
   visibility: visible;
 }
-
-.loginFrame {
-  /* background-color: aquamarine; */
-  display: flex;
-
+.botonUnete.active{
+  visibility:visible;
 }
-
-.formCajas {
-  /* background-color: aqua; */
-  margin-top: 10px;
-  display: block;
-  
-
-}
-
-.formCajas label {
-  color: rgb(255, 247, 0);
-  align-items:  center;
-}
-
 .loginFrame .cerrarPopUp {
   font-size: 16px;
   line-height: 16px;
@@ -205,25 +166,40 @@ form {
   text-align: right;
   color: #fff;
   transition: .3s ease all;
-
 }
-
 .loginFrame .cerrarPopUp:hover {
   color: black;
 }
-
+form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.formCajas label {
+  color: rgb(255, 247, 0);
+  align-items:  center;
+}
+.datos {
+  border: 1px;
+  border-color: burlywood;
+  border-radius: 8px;
+  border-style: solid;
+  padding: 10px;
+  background-color: rgba(7, 19, 7, 0.39);
+  width: 100%;
+}
 .btnLogin {
   cursor: pointer;
   transition: .3s ease alL;
-  background: rgb(248, 233, 22);
+  background: rgb(247, 237, 98);
   border-radius: 3px;
+  width: 50%;
+  height: 30px;
   border-style: none;
-  padding: 5px 8px;
-
 }
-
 .btnLogin:hover {
-  background: rgb(245, 238, 143);
+  background: rgb(250, 158, 10);
 }
 
 /* css de fabulasVideo */

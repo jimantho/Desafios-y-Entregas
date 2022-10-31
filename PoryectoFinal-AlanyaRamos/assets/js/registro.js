@@ -8,7 +8,7 @@ let arrayRegistroUsuarios;
 
 /* Incorporando Array Objetos*/
 class Participante {
-    constructor(usuario, contrasena, dni, nombre, edad, sexo,estadoSesion) {
+    constructor(usuario, contrasena, dni, nombre, edad, sexo, estadoSesion) {
         this.usuario = usuario;
         this.contrasena = contrasena;
         this.dni = dni;
@@ -33,8 +33,8 @@ function Registrar() {
     var sexoA = document.getElementById("sexo").value;
     var estadoSesion = "";
 
-    arrayParticipante.push(new Participante(usuarioA, contrasenaA, dniA, nombreA, edadA, sexoA,estadoSesion));
-    localStorage.setItem("registroUsuarios",JSON.stringify(arrayParticipante));
+    arrayParticipante.push(new Participante(usuarioA, contrasenaA, dniA, nombreA, edadA, sexoA, estadoSesion));
+    localStorage.setItem("registroUsuarios", JSON.stringify(arrayParticipante));
 
     arrayRegistroUsuarios = JSON.parse(localStorage.getItem("registroUsuarios"));
     console.log(arrayRegistroUsuarios);
@@ -48,8 +48,14 @@ function Registrar() {
 
     // document.getElementById("mensaje").innerHTML = "Registrado Correctamente";
     Swal.fire({
-        text: 'Registrado Correctamente'})
-
+        text: 'Registrado Correctamente',
+        confirmButtonText: "Oki",
+    }).then((result)=>{
+        if(result.value){
+            console.log("fucniona");
+            window.location = "/index.html";
+        }
+    });
 };
 
 function verRegistro() {

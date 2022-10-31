@@ -9,7 +9,9 @@ iconCerrarSesion = document.getElementById("cerrarSesion");
 var login = document.getElementById("cuentaUsuario"),
   overlay = document.getElementById("overlay"),
   loginFrame = document.getElementById("loginFrame"),
-  btncerrarPopUp = document.getElementById("cerrarPopUp");
+  btncerrarPopUp = document.getElementById("cerrarPopUp"),
+  unete = document.getElementById("botonUnete");
+  console.log(unete);
 
 /* leyendo datos */
 usuarios = JSON.parse(localStorage.getItem("registroUsuarios"));
@@ -18,6 +20,7 @@ usuarios = JSON.parse(localStorage.getItem("registroUsuarios"));
 function mostrarPopUp() {
   overlay.classList.add("active");
   loginFrame.classList.add("active");
+  unete.classList.remove("botonUnete");
 };
 function mostrarPagina() {
   window.location = "/assets/pages/miEspacio.html"
@@ -44,6 +47,7 @@ iconCerrarSesion.addEventListener("click", function cerrarSesion() {
 btncerrarPopUp.addEventListener("click", function () {
   overlay.classList.remove("active");
   loginFrame.classList.remove("active");
+  unete.classList.add("botonUnete");
 });
 loginUsuario.addEventListener("click", (e) => {
   inputUsuario = document.getElementById("user").value;
@@ -62,6 +66,7 @@ const iniciarSesion = (inputUsuario, inputContrasena) => {
     });
     overlay.classList.remove("active");
     loginFrame.classList.remove("active");
+    unete.classList.add("botonUnete");
   } else {
     usuariosArray.forEach(usuario => {
       if ((usuario.usuario === inputUsuario) & (usuario.contrasena === inputContrasena)) {
@@ -78,6 +83,7 @@ const iniciarSesion = (inputUsuario, inputContrasena) => {
         });
         overlay.classList.remove("active");
         loginFrame.classList.remove("active");
+        unete.classList.add("botonUnete");
       };
     });
   }
